@@ -34,9 +34,6 @@
   .head{display:flex;align-items:center;gap:18px;padding:20px 22px;cursor:pointer;user-select:none}
   .rank{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
     font-weight:800;font-size:18px;color:#1a1530;background:var(--accent)}
-  .card[data-p="2"] .rank{background:var(--p2)}
-  .card[data-p="3"] .rank{background:var(--p3)}
-  .card[data-p="4"] .rank{background:var(--p4)}
   .htext{flex:1;min-width:0}
   .client{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.02em}
   .title{font-size:19px;font-weight:700;margin-top:2px}
@@ -70,6 +67,17 @@
     background:rgba(200,240,74,.06);border-radius:0 10px 10px 0}
   .ask b{color:var(--accent)}
   .ask span{color:#ddd7f5;font-size:14.5px}
+  .next-h{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:24px 0 10px;font-weight:700}
+  .next{list-style:none;margin:0;padding:0}
+  .next li{position:relative;padding:8px 0 8px 28px;color:#ddd7f5;font-size:15px;border-top:1px solid var(--line)}
+  .next li:first-child{border-top:none}
+  .next li::before{content:"";position:absolute;left:3px;top:14px;width:9px;height:9px;border-radius:50%;border:2px solid var(--accent2)}
+  .next li.later{color:var(--muted)}
+  .next li.later::before{border-style:dashed;border-color:var(--muted)}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-radius:5px;padding:1px 6px;margin-right:8px;vertical-align:1.5px;font-weight:700}
+  .tag-doing{color:var(--accent);border:1px solid rgba(200,240,74,.45)}
+  .tag-later{color:var(--muted);border:1px solid var(--line)}
+  .note{font-size:13px;color:var(--muted);margin-top:10px}
   footer{margin-top:46px;color:var(--muted);font-size:13px;text-align:center}
   a.repo{color:var(--accent2);text-decoration:none;font-size:13px;border-bottom:1px dotted}
 </style>
@@ -141,6 +149,12 @@
             <p style="margin-top:14px"><a class="repo">📁 Repo: Wink&amp;See - Fotoshoots</a><br><span style="font-size:12.5px;color:var(--muted)">O.a. <code>PROJECTSCOPE-SAME-VAR-MODELFOTOS.md</code> met de volledige scope, DoD, QA-codes en manifest-format.</span></p>
           </div>
         </div>
+        <h4 class="next-h">Wat nog moet gebeuren</h4>
+        <ul class="next">
+          <li><span class="tag tag-doing">bezig</span>Onderzoek naar betrouwbare, juiste plaatsing via een image-gen tool (Codex?)</li>
+          <li>Een gestructureerde, herhaalbare workflow opzetten</li>
+        </ul>
+        <p class="note">De SKU→VAR-koppeling wordt door Wink&amp;See zelf gedaan — geen taak voor ons.</p>
       </div></div></div>
     </div>
 
@@ -181,6 +195,14 @@
             <div class="ask"><b>Raakvlak:</b> <span>deelt de Magento-koppeling met project 3 (Klantenservice). Dezelfde basislaag.</span></div>
           </div>
         </div>
+        <h4 class="next-h">Wat nog moet gebeuren</h4>
+        <ul class="next">
+          <li>Het controleproces in kaart brengen</li>
+          <li>Het proces inrichten</li>
+          <li>De slimme controle bouwen</li>
+          <li class="later"><span class="tag tag-later">later</span>Kijken wat we zelf kunnen oplossen zonder de klant te hoeven vragen</li>
+          <li class="later"><span class="tag tag-later">optioneel</span>Vervolgtraject: een tooltje voor het meten van de pupilafstand</li>
+        </ul>
       </div></div></div>
     </div>
 
@@ -241,7 +263,7 @@
         </div>
       </div>
       <div class="body"><div class="body-inner"><div class="pad">
-        <span class="status s-ready">Fase 1 grotendeels gebouwd</span>
+        <span class="status s-ready">v1.0 MVP staat · fase 1 grotendeels af</span>
         <div class="split">
           <div>
             <h4>De situatie</h4>
@@ -263,10 +285,16 @@
             </ul>
             <h4>Stack</h4>
             <p>Next.js 15 (App Router, RSC, TypeScript, Tailwind), Supabase (Postgres + RLS), Stripe Checkout + Billing, hosting op Netlify, vanilla-JS embed-widget.</p>
-            <div class="ask"><b>Status:</b> <span>verst gevorderde project — fase 1 is grotendeels af, het gaat om afmaken en uitbreiden.</span></div>
             <p style="margin-top:12px"><a class="repo">📁 Repo: BookingSlots</a></p>
           </div>
         </div>
+        <h4 class="next-h">Wat nog moet gebeuren</h4>
+        <ul class="next">
+          <li>Testen, verbeteren, opnieuw testen</li>
+          <li>De implementatie bij House of Eve testen</li>
+          <li>AVG (klantgegevens) en schaalbaarheid borgen</li>
+          <li class="later"><span class="tag tag-later">optioneel</span>Aanmeldprotocol zodat we kunnen uitrollen naar meer studio's</li>
+        </ul>
       </div></div></div>
     </div>
 

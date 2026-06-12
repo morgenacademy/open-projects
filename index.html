@@ -164,6 +164,52 @@
         <div class="rank">2</div>
         <div class="htext">
           <div class="client">Online (zonne)brillen groothandel</div>
+          <div class="title">Binnenkomende voorraad tonen in account</div>
+          <div class="tagline">Bestellende klanten zien op hun accountpagina wat er onderweg is en wanneer het binnenkomt</div>
+        </div>
+        <div class="right">
+          <div class="stack"><span class="tech">Magento</span><span class="tech">OneDrive/Excel</span><span class="tech">Python</span></div>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="body"><div class="body-inner"><div class="pad">
+        <span class="status s-scope">Excel-bron is er en wordt actueel bijgehouden</span>
+        <div class="split">
+          <div>
+            <h4>De situatie</h4>
+            <p>Producten zijn regelmatig uitverkocht. Wat er onderweg is wordt bijgehouden in een <b>Excel-sheet op OneDrive</b>: welke producten eraan komen en wanneer. Klanten die in hun accountomgeving (<b>Magento</b>) nieuwe producten willen bestellen, zien daar niets van terug.</p>
+            <h4>De pijn</h4>
+            <p>Klanten wachten op specifieke producten en weten niet wanneer die binnenkomen. Dat levert vragen aan de klantenservice op en uitgestelde bestellingen.</p>
+            <h4>De vraag</h4>
+            <p>Een overzicht op de accountpagina — <b>"dit komt eraan, en wanneer"</b> — automatisch gevoed vanuit de Excel-sheet.</p>
+          </div>
+          <div>
+            <h4>Wat we zoeken</h4>
+            <ul>
+              <li>Iemand die de Excel op OneDrive automatisch uitleest (bijv. Microsoft Graph API)</li>
+              <li>De koppeling legt tussen Excel-regels en producten/SKU's in Magento</li>
+              <li>Het overzicht toont op de accountpagina van de bestellende klant</li>
+            </ul>
+            <h4>Wat er al ligt</h4>
+            <p>De Excel-sheet op OneDrive, die al actueel wordt bijgehouden: wat is onderweg, wat komt eraan.</p>
+            <div class="ask"><b>Raakvlak:</b> <span>deelt de Magento-koppeling met projecten 3 en 4. Dezelfde basislaag.</span></div>
+          </div>
+        </div>
+        <h4 class="next-h">Wat nog moet gebeuren</h4>
+        <ul class="next">
+          <li>Mapping bepalen: Excel-regels → producten in Magento</li>
+          <li>Verversing inrichten: hoe vaak en hoe komt de data uit OneDrive</li>
+          <li>De weergave op de accountpagina bouwen</li>
+        </ul>
+      </div></div></div>
+    </div>
+
+    <!-- ===== PROJECT 3 ===== -->
+    <div class="card" data-p="3">
+      <div class="head" onclick="t(this)">
+        <div class="rank">3</div>
+        <div class="htext">
+          <div class="client">Online (zonne)brillen groothandel</div>
           <div class="title">Ordercheck automatiseren</div>
           <div class="tagline">Recepten (oogmetingen) bij orders automatisch controleren op fouten en onlogica</div>
         </div>
@@ -192,7 +238,7 @@
             </ul>
             <h4>Wat er al ligt</h4>
             <p>Toegang tot de Magento backend via API is er — er draait al een Python-koppeling op de staging-omgeving (Orders, Customers, Products). Mail is ook een mogelijk kanaal.</p>
-            <div class="ask"><b>Raakvlak:</b> <span>deelt de Magento-koppeling met project 3 (Klantenservice). Dezelfde basislaag.</span></div>
+            <div class="ask"><b>Raakvlak:</b> <span>deelt de Magento-koppeling met project 2 (Voorraad) en project 4 (Klantenservice). Dezelfde basislaag.</span></div>
           </div>
         </div>
         <h4 class="next-h">Wat nog moet gebeuren</h4>
@@ -206,10 +252,10 @@
       </div></div></div>
     </div>
 
-    <!-- ===== PROJECT 3 ===== -->
-    <div class="card" data-p="3">
+    <!-- ===== PROJECT 4 ===== -->
+    <div class="card" data-p="4">
       <div class="head" onclick="t(this)">
-        <div class="rank">3</div>
+        <div class="rank">4</div>
         <div class="htext">
           <div class="client">Online (zonne)brillen groothandel</div>
           <div class="title">Klantenservice slimmer maken</div>
@@ -249,10 +295,10 @@
       </div></div></div>
     </div>
 
-    <!-- ===== PROJECT 4 ===== -->
-    <div class="card" data-p="4">
+    <!-- ===== PROJECT 5 ===== -->
+    <div class="card" data-p="5">
       <div class="head" onclick="t(this)">
-        <div class="rank">4</div>
+        <div class="rank">5</div>
         <div class="htext">
           <div class="client">Pilatesstudio</div>
           <div class="title">Booking- &amp; betaalsysteem</div>
@@ -303,7 +349,7 @@
   </div>
 
   <footer>
-    Intern overzicht voor gesprekken met potentiële bouwers · Morgen · bijgewerkt 11 juni 2026
+    Intern overzicht voor gesprekken met potentiële bouwers · Morgen · bijgewerkt 12 juni 2026
   </footer>
 </div>
 

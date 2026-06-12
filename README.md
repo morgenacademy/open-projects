@@ -2,9 +2,10 @@
 
 Intern overzicht van projecten waar we bouwers voor zoeken, voor gesprekken met potentiële kandidaten.
 
-Open `index.html` in een browser. Bevat vier projecten:
+Open `index.html` in een browser. Bevat vijf projecten:
 
-1. **Wink&See — modelfoto-pijplijn** (AI variant-transfer voor productfoto's)
-2. **Wink&See — ordercheck automatiseren** (receptvalidatie via Magento API)
-3. **Wink&See / SoloSolis — klantenservice slimmer maken** (AI-assistent op e-mail + WhatsApp)
-4. **House of Eve — booking- & betaalsysteem** (Bsport-alternatief, Next.js/Supabase/Stripe)
+1. **Modelfoto-pijplijn** (AI variant-transfer voor productfoto's)
+2. **Binnenkomende voorraad tonen in account** (OneDrive/Excel → Magento accountpagina)
+3. **Ordercheck automatiseren** (receptvalidatie via Magento API)
+4. **Klantenservice slimmer maken** (AI-assistent op e-mail + WhatsApp)
+5. **Booking- & betaalsysteem** (Bsport-alternatief, Next.js/Supabase/Stripe)
